@@ -78,3 +78,15 @@ input {
     width: 500px;
     height: 300px;
 }
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    background: teal;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
