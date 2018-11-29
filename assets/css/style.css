@@ -4,11 +4,38 @@ body {
 }
 
 img {
+    position: relative;
     width: 200px;
     height: 200px;
-    margin: 0px 20px 0px 0px;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.portfolio {
+    width: 400px;
+    height: 200px;
+    float: right;
+}
+
+#about {
+    position: absolute;
+    background: white;
+    color: teal;
+    font-size: 40px;
+    padding: 20px;
+    height: 800px;
+    width: 1000px;
+    margin: 20px 0px 20px 130px;
 
 }
+
+.greybar {
+    position: relative;
+    width: 800px;
+    height: 40px;
+    background-color: red;
+}
+
 
 header {
     background: teal;
@@ -19,8 +46,9 @@ header {
     text-emphasis-style: bold;
     height: 100px;
     width: 200px;
-    left: 130px;  
+    left: 130px; 
 }
+
 
 nav {
     background: white;
@@ -32,6 +60,7 @@ nav {
 }
 
 section {
+    position: absolute;
     background: white;
     color: teal;
     font-size: 40px;
@@ -39,6 +68,7 @@ section {
     height: 500px;
     width: 1000px;
     margin: 20px 0px 20px 130px;
+    
 }
 
 h3 {
@@ -51,13 +81,15 @@ h2 {
     font-size: 20px;
     padding: 20px;
 }
-footer {
+
+/* footer {
+    positionL: relative;
+    background: teal;
     width: 100%;
     height: 10px;
-    background: teal;
-    margin: 0 auto 0 auto;
-    
-}
+    clear: both;
+    margin-top: 300px;
+} */
 
 div {
     background: white;
@@ -82,6 +114,9 @@ input {
 p {
     color: black;
     font-size: 20px;
+    margin-left: 250px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
 }
 
 button {
@@ -89,4 +124,71 @@ button {
     padding: 10px;
     font-size: 20px;
     color: white;
+}
+
+
+/* ===================
+This is for the Nav Bar<!--  */
+
+.container {
+    width: 80%;
+      
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0 auto 0 auto;
+    padding-top: 0px;
+    padding-right: 40px;
+    list-style: none;
+    text-align: right;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+
 }
